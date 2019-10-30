@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Setup implements Component {
 	
+	private double price;
+	
 	List<Component> componentList = new ArrayList<Component>();
 	
 	public void addToSetup(Component componentToAddToCurrentSetup) {
@@ -13,7 +15,7 @@ public class Setup implements Component {
 
 	@Override
 	public double getPrice() {
-		double price = 0;
+		
 		for (Component c: componentList) {
 			price += c.getPrice();
 		}
