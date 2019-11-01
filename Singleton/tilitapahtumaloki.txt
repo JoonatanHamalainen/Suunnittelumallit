@@ -1,0 +1,5 @@
+TALLETUS (Nordean säästötili): 80.5€
+NOSTO (Nordean käyttötili): 100.0€
+SIIRTO (Nordean säästötili -> Danske Bankin käyttötili): 40.0€
+TALLETUS (Danske Bankin säästötili): 56.74€
+NOSTO (Aktian käyttötili): 30.0€
