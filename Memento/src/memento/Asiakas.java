@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Asiakas {
-	
-	private boolean voitto;
 
 	public static void main(String[] args) {
 		
@@ -26,7 +24,7 @@ public class Asiakas {
 		if (pelaajat.get(i))
 			System.out.println(pelaaja + ": Voitit!");
 		else
-			System.out.println(pelaaja + ": Hävisit...");
+			System.out.println(pelaaja + ": HÃ¤visit...");
 	}
 	}
 
