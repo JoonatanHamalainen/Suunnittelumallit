@@ -8,11 +8,11 @@ public class LevelingVisitor implements Visitor {
 	public void visit(Tank tank) {
 		
 		if(tank.getTimesLeveled() == 5) {
-			tank.changeState(new Sleeping());
+			tank.changeState(Sleeping.getInstance());
 			tank.setTimesLeveled(0);
 		}
 		else if(ovrTimesLeveled==2) {
-			tank.changeState(new Sleeping());
+			tank.changeState(Awake.getInstance());
 			ovrTimesLeveled = 0;
 		}
 		
@@ -24,11 +24,11 @@ public class LevelingVisitor implements Visitor {
 	@Override
 	public void visit(Fighter fighter) {
 		if(fighter.getTimesLeveled() == 5) {
-			fighter.changeState(new Sleeping());
+			fighter.changeState(Sleeping.getInstance());
 			fighter.setTimesLeveled(0);
 		}
 		else if(ovrTimesLeveled==2) {
-			fighter.changeState(new Sleeping());
+			fighter.changeState(Awake.getInstance());
 			ovrTimesLeveled = 0;
 		}
 		
@@ -40,11 +40,11 @@ public class LevelingVisitor implements Visitor {
 	@Override
 	public void visit(Marksman marksman) {
 		if(marksman.getTimesLeveled() == 5) {
-			marksman.changeState(new Sleeping());
+			marksman.changeState(Sleeping.getInstance());
 			marksman.setTimesLeveled(0);
 		}
 		else if(ovrTimesLeveled==2) {
-			marksman.changeState(new Sleeping());
+			marksman.changeState(Awake.getInstance());
 			ovrTimesLeveled = 0;
 		}
 		
