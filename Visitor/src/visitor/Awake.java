@@ -38,7 +38,8 @@ public class Awake extends State{
 			 dp += (int) (100 * chr.getDPMultiplier());
 		}	
 		showStats();
-		chr.setTimesLeveled(1);
+		int times = chr.getTimesLeveled() + 1;
+		chr.setTimesLeveled(times);
 	}
 	
 	private void showStats() {

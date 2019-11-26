@@ -2,7 +2,7 @@ package visitor;
 
 public class LevelingVisitor implements Visitor {
 	
-	private int ovrTimesLeveled = 0;
+	private static int ovrTimesLeveled = 0;
 
 	@Override
 	public void visit(Tank tank) {
@@ -27,7 +27,7 @@ public class LevelingVisitor implements Visitor {
 			fighter.changeState(Sleeping.getInstance());
 			fighter.setTimesLeveled(0);
 		}
-		else if(ovrTimesLeveled==2) {
+		if(ovrTimesLeveled==2) {
 			fighter.changeState(Awake.getInstance());
 			ovrTimesLeveled = 0;
 		}

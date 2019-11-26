@@ -60,7 +60,7 @@ public class Fighter extends CharacterType{
 	}
 	@Override
 	public void setTimesLeveled(int times) {
-		this.timesLeveled += times;
+		this.timesLeveled = times;
 		
 	}
 }
